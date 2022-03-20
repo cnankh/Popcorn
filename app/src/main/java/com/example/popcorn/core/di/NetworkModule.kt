@@ -1,6 +1,8 @@
 package com.example.popcorn.core.di
 
 import com.example.popcorn.BuildConfig
+import com.example.popcorn.MainActivity
+import com.example.popcorn.MyApplication
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
@@ -8,6 +10,9 @@ import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ActivityComponent
+import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -16,13 +21,13 @@ import timber.log.Timber
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
-
+@InstallIn(SingletonComponent::class)
 @Module
 class NetworkModule {
 
     @Singleton
     @Provides
-    fun provideBaseUrl() = ""
+    fun provideBaseUrl() = "https://google.com/"
 
     @Provides
     fun provideOkHttpClient(): OkHttpClient {
@@ -43,7 +48,7 @@ class NetworkModule {
     @Singleton
     fun provideRetrofit(url: String, moshi: Moshi, okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(url)
+            .baseUrl(provideBaseUrl())
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .addCallAdapterFactory(CoroutineCallAdapterFactory())
             .client(okHttpClient)
