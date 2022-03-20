@@ -14,12 +14,12 @@ import timber.log.Timber
  * @author sina
  * v1.0
  */
-abstract class BaseActivity<VBinding : ViewBinding, viewModel : ViewModel> : AppCompatActivity() {
+abstract class BaseActivity<VBinding : ViewBinding, ViewModel : BaseViewModel> : AppCompatActivity() {
 
     private val TAG: String = "tag"
 
-    protected lateinit var viewModel: viewModel
-    protected abstract fun getViewModelClass(): Class<viewModel>
+    protected lateinit var viewModel: ViewModel
+    protected abstract fun getViewModelClass(): Class<ViewModel>
 
     private var _binding: VBinding? = null
     private val binding get() = _binding!!

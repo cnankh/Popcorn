@@ -1,13 +1,11 @@
 package com.example.popcorn.core.base
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
 import io.reactivex.rxjava3.disposables.CompositeDisposable
@@ -18,12 +16,12 @@ import timber.log.Timber
  * @author sina
  * v1.0
  */
-abstract class BaseFragment<VBinding : ViewBinding, viewModel : ViewModel> : Fragment() {
+abstract class BaseFragment<VBinding : ViewBinding, ViewModel : BaseViewModel> : Fragment() {
 
     private val TAG: String = "tag"
 
-    protected lateinit var viewModel: viewModel
-    protected abstract fun getViewModelClass(): Class<viewModel>
+    protected lateinit var viewModel: ViewModel
+    protected abstract fun getViewModelClass(): Class<ViewModel>
 
     private var _binding: VBinding? = null
     private val binding get() = _binding!!
