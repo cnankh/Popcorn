@@ -1,5 +1,6 @@
 package com.example.popcorn.core.base
 
+import android.content.Context
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -24,13 +25,15 @@ abstract class BaseActivity<VBinding : ViewBinding, ViewModel : BaseViewModel> :
     private var _binding: VBinding? = null
     private val binding get() = _binding!!
 
-
     protected abstract fun getViewBinding(): VBinding
 
     private val disposableContainer = CompositeDisposable()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        _binding = getViewBinding()
+        setContentView(_binding!!.root)
         init()
     }
 
@@ -87,4 +90,10 @@ abstract class BaseActivity<VBinding : ViewBinding, ViewModel : BaseViewModel> :
         super.onDestroy()
     }
 
+    override fun attachBaseContext(newBase: Context?) {
+        super.attachBaseContext(newBase)
+    }
+
+
 }
+
