@@ -1,7 +1,5 @@
 package com.example.popcorn.core.model
 
-import com.exchange.app.core.model.ErrorHandler
-
 sealed  class ServiceState<out T>() {
 
     class Loading<T>: ServiceState<T>()

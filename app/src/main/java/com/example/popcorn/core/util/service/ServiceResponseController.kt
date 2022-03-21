@@ -4,8 +4,10 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import com.example.popcorn.R
+import com.example.popcorn.core.model.ErrorCode
+import com.example.popcorn.core.model.ErrorHandler
+import com.example.popcorn.core.model.Message
 import com.example.popcorn.core.model.NetworkResult
-import com.exchange.app.core.model.*
 
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.JsonDataException

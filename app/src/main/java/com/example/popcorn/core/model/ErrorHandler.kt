@@ -1,11 +1,10 @@
-package com.exchange.app.core.model
+package com.example.popcorn.core.model
 
 import androidx.annotation.Keep
 import com.squareup.moshi.JsonClass
-import javax.security.auth.Subject
 
 @Keep
-@JsonClass(generateAdapter = true)
+//@JsonClass(generateAdapter = true)
 data class ErrorHandler(
     val message: Any?,
     val code: String? = "",
@@ -13,13 +12,7 @@ data class ErrorHandler(
 )
 
 @Keep
-@JsonClass(generateAdapter = true)
-data class Message(
-    val error: String
-)
-
-@Keep
-@JsonClass(generateAdapter = true)
+//@JsonClass(generateAdapter = true)
 data class MessageMap(
     val message: Map<String, List<String>>
 )
