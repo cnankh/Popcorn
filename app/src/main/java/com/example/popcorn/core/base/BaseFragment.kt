@@ -24,7 +24,7 @@ abstract class BaseFragment<VBinding : ViewBinding, ViewModel : BaseViewModel> :
     protected abstract fun getViewModelClass(): Class<ViewModel>
 
     private var _binding: VBinding? = null
-    private val binding get() = _binding!!
+    val binding get() = _binding!!
 
 
     protected abstract fun getViewBinding(): VBinding

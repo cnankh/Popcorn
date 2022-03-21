@@ -119,6 +119,9 @@ dependencies {
     implementation 'dev.b3nedikt.reword:reword:4.0.1'
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"
 
+    //adapter
+    implementation 'com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:4.3.2'
+
     //paging libraries
     def paging_version = "3.0.1"
     implementation "androidx.paging:paging-runtime-ktx:$paging_version"
