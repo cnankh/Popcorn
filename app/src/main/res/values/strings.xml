@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Popcorn</string>
+
+
+    <string name="error_no_internet">no internet</string>
+    <string name="error_timeout">timeout</string>
+    <string name="error_network_host">network host</string>
+    <string name="error_network_json_response">json response</string>
+    <string name="error_network_unknown">unknown error</string>
+    <string name="error_network_json_error_response">json error</string>
+    <string name="error_network_internet">error_network_internet</string>
+
 </resources>
