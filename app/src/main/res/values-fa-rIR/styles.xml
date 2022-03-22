@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  size: Xsmall  -->
+    <style name="fontXSmallLight">
+        <item name="fontFamily">@font/iransanslight</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontXSmallRegular">
+        <item name="fontFamily">@font/iransansregular</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontXSmallMedium">
+        <item name="fontFamily">@font/iransansmedium</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontXSmallBold">
+        <item name="fontFamily">@font/iransansbold</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--  size: small  -->
+    <style name="fontSmallLight">
+        <item name="fontFamily">@font/iransanslight</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontSmallRegular">
+        <item name="fontFamily">@font/iransansregular</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontSmallMedium">
+        <item name="fontFamily">@font/iransansmedium</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontSmallBold">
+        <item name="fontFamily">@font/iransansbold</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--  size: medium  -->
+    <style name="fontMediumLight">
+        <item name="fontFamily">@font/iransanslight</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontMediumRegular">
+        <item name="fontFamily">@font/iransansregular</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontMediumMedium">
+        <item name="fontFamily">@font/iransansmedium</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontMediumBold">
+        <item name="fontFamily">@font/iransansbold</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--  size: large  -->
+    <style name="fontLargeLight">
+        <item name="fontFamily">@font/iransanslight</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontLargeRegular">
+        <item name="fontFamily">@font/iransansregular</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontLargeMedium">
+        <item name="fontFamily">@font/iransansmedium</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontLargeBold">
+        <item name="fontFamily">@font/iransansbold</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--  size: XLarge  -->
+    <style name="fontXLargeLight">
+        <item name="fontFamily">@font/iransanslight</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontXLargeRegular">
+        <item name="fontFamily">@font/iransansregular</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontXLargeMedium">
+        <item name="fontFamily">@font/iransansmedium</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="fontXLargeBold">
+        <item name="fontFamily">@font/iransansbold</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

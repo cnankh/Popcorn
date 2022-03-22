@@ -8,10 +8,10 @@
     tools:context=".views.playground.PlaygroundFragment">
 
     <TextView
+        style="@style/fontLargeBold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="playground"
-        android:textSize="30sp" />
+        android:text="سینا نخعی" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPlayground"

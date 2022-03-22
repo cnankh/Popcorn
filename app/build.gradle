@@ -122,6 +122,9 @@ dependencies {
     //adapter
     implementation 'com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:4.3.2'
 
+    //dimens
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
     //paging libraries
     def paging_version = "3.0.1"
     implementation "androidx.paging:paging-runtime-ktx:$paging_version"
